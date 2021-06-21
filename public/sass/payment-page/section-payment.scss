@@ -1,0 +1,161 @@
+@import '../variables.scss';
+
+
+//no olvidar los max width del elemento
+
+.l-payment{
+    width: 90%;
+
+    //donde ira empaqueatado no es flex entonces debo centrarme en auto
+    margin: 0 auto;
+    min-width: 290px;
+    @include flex-column;
+    align-items: center;
+    margin-top: 20px;
+
+    .l-payment__accept{
+        @include flex-column;
+        align-items: center;
+
+        .c-button{
+            margin: $margin-generic 0px;
+        }
+    }
+
+    .c-payment__get-back{
+        margin-bottom: $margin-generic;
+    }
+
+}
+
+.c-form{
+    width: 100%;
+
+    .l-form-section{
+        width: 100%;
+        border: none;
+        margin-bottom: $margin-generic;
+
+        .c-form-section__title{
+            @include text-bold-16;
+            margin-bottom: 13px;
+        }
+
+        .l-form-section__inputs{
+            margin-left: 10px;
+            margin-right: 10px;
+
+            &--options{
+                padding: 10px 10px;
+                display: flex;
+                flex-wrap: wrap;
+                background: $gray-second;
+                justify-content: center;
+                border-radius: $border-radius-generic;
+
+                .c-form-option{
+                    margin: 5px 10px;
+                }
+            }
+
+            //modificaciones demasiado especificar para ser parte del componente -> aplicado para los elementos de validacion de tarjeta
+            &--inline{
+                display: flex;
+                align-items: flex-end;
+
+                //nuevamente demasiado especifico
+                input[type=text]{
+                    text-align: center;
+                }
+
+                >label:last-child{
+                    width: 40%;
+                }
+
+                >label:first-child{
+                    margin-right: 10%;
+                }
+            }
+        }
+
+        .c-form-input{
+            @include text-semi-bold-16;
+            @include flex-column;
+            margin-bottom: 7px;
+            width: 100%;
+
+            &__title{
+                @include text-semi-bold-16;
+            }
+
+            //los input ya contienen un width por defecto, ademas ocuparan siempre el 100% de su padre
+            input[type=text],input[type=email]{
+                @include text-regular-14;
+                width: 100%;
+                border-top-left-radius: $border-radius-generic/4;
+                border-top-right-radius: $border-radius-generic/4;
+                padding: 7px 0px 0px 0px;
+                outline: none;
+                border: none;   
+                border-bottom: 1px solid $blue-second;
+                padding-bottom: 2px;
+                padding-left: 2px;
+    
+                &:active, &:focus{
+                    background-color: #dbf0ff;
+                }
+
+            }
+
+            &--icon{
+                position: relative;
+
+                input[type=text]{
+                    padding-left: 30px;
+                }
+                
+                i{
+                    position: absolute;
+                    bottom: 0;
+                    padding: 5px;
+                }
+            }
+    
+    
+        }
+
+        .l-form-input__items{
+            display: flex;
+
+            input[type=text]{
+                margin-right: 20px;
+            }
+
+
+        }
+
+        .c-form-inputError{
+            @include text-regular-14;
+            text-align: center;
+            padding: 5px 5px;
+            margin-top: 2px;
+            background-color: palevioletred;
+            color: white;
+            border-radius: $border-radius-generic/4;
+        }
+    }
+    
+}
+
+
+@media (min-width:768px){
+    .l-payment{
+        max-width: 532px;              
+    }
+}
+
+@media (min-width:1024px){
+    .l-payment{
+        max-width: 490px;
+    }
+}

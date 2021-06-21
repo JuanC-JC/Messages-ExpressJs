@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+{"version":3,"sourceRoot":"","sources":["../sass/proceso.scss","../sass/variables.scss"],"names":[],"mappings":"AAEA;EACI;EACA;EACA;EACA;;AAGA;ECmBA,aA5Ba;EA6Bb;EAaA;ED/BI;EACA;;AAGJ;EACI;EACA;EACA;EACA;;;AAMR;EACI;EACA;EACA;;AAGA;EACI;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;;AAEA;EChBJ,aA5Ba;EA6Bb;EAiBA;EDAQ;EACA;;AAGJ;ECjBJ,aAhCa;EAgGb;EACA;ED9CQ;EACA;;AAIR;EACI;;AAEA;EACG;;AAEA;EACC;;AAED;EACI","file":"proceso.css"}
+=======
+{"version":3,"sourceRoot":"","sources":["../sass/proceso.scss","../sass/variables.scss"],"names":[],"mappings":"AAEA;EACI;EACA;EACA;;AAGA;ECeA,aAvBa;EAwBb;EAcA;ED5BI;EACA;;AAGJ;EACI;EACA;EACA;EACA;;;AAMR;EACI;EACA;EACA;;AAGA;EACI;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;;AAEA;ECpBJ,aAvBa;EAwBb;EAmBA;EDEQ;EACA;;AAGJ;ECrBJ,aA3Ba;EA0Gb;EACA;EDzDQ;EACA;;AAIR;EACI;;AAEA;EACG;;AAEA;EACC;;AAED;EACI","file":"proceso.css"}
+>>>>>>> responsive

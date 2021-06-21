@@ -1,0 +1,496 @@
+@import './variables.scss';
+
+
+//////////////////////////////////////////// TEXTOS ///////////////////////////////
+
+.c-txt-16{
+    @include text-regular-16;
+}
+.c-txt-14{
+    @include text-regular-14;
+}
+.c-txt-12{
+    @include text-regular-12;
+}
+
+///////////////////// TXT - LIGHT /////////////////////
+.c-txt-l-16{
+    @include text-light-16;
+}
+.c-txt-l-14{
+    @include text-light-14;
+}
+.c-txt-l-12{
+    @include text-light-12;
+}
+.c-txt-l-10{
+    @include text-light-10;
+}
+
+
+
+
+//////////////////////////////////////////// COMPONENTS AND MODIFYQUES //////////////////////////////////////////// 
+
+//////////// Button ///////////
+.c-button{
+    @include text-regular-16;
+    display: inline-block;
+    border-radius: $border-radius-generic/2;
+    outline: none;
+    padding: 10px 24px;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px rgba($color: $gray-second, $alpha: 0.4);
+
+    &--small{
+        padding: 5px 10px;
+    }
+
+    &--green{
+        background: $green-main;
+        color: white;
+        border: 2px solid $green-main;
+
+        &:hover{
+            background: white;
+            color: $green-main;
+        }
+    }
+
+
+    &--flat{
+        background: white;
+        border: 1px solid $gray-main;
+
+        &:hover{
+            // background: $blue-second;
+            border: 1px solid $blue-second;
+            // border-color: white;
+            // color: white;
+
+            // i{
+            //     // color: white;
+            // }
+
+        }
+    }
+
+    &--selected{
+            background: $blue-second;
+            color: white;
+            i{
+                color: white;
+            }
+    }
+
+}
+
+//////////// description ///////////
+.c-description-item{
+    @include text-regular-16;
+    text-align: center;
+    width: 30%;
+
+    &--right{
+
+        border-right: 1px solid $gray-main;
+    }
+}
+
+//////////// increment units ///////////
+.c-increment{
+    display: flex;
+    align-items: center;
+    
+    &__button{
+        i{
+            font-size: 14px;
+            color: $blue-second;
+        }
+        
+        padding: 5px 4px;
+    }
+
+    &__text{
+        @include text-light-14;
+        margin: 0px 10px;
+    }
+
+}
+
+//////////// CheckBox ///////////
+.c-checkbox-option{
+
+    @include text-regular-14;
+
+    input[type=checkbox]{
+        display: none;
+    
+    
+        &+label{
+            display: flex;
+            align-items: center;
+    
+            &:hover{
+                cursor: pointer;
+            }
+    
+            &::before{
+    
+                font-weight: bolder;
+                content: '';
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                line-height: 0;
+                border-radius: $border-radius-generic/2;
+                width: 20px;
+                height: 20px;
+    
+                border: 2px solid $blue-second;
+                transition: all 0.1s;
+                margin-right: 5px;
+    
+            }
+        }
+    
+        &:not(:checked) + label::before{
+    
+            color: $blue-second;
+            -webkit-transform: scale(1) rotate(0);
+            transform: scale(1) rotate(0);
+    
+        }
+    
+        &:checked + label::before{
+            content: '✕';
+            // content: '\2688';
+            color: $blue-second;
+            -webkit-transform: scale(1) rotate(180deg);
+            transform: scale(1) rotate(180deg);
+    
+        }
+    
+    }
+
+
+}
+
+.c-radio-option{
+
+    @include text-regular-14;
+
+    input[type=radio] {
+        display: none;
+    
+    
+        &+label{
+            display: flex;
+            align-items: center;
+    
+            &:hover{
+                cursor: pointer;
+            }
+    
+            &::before{
+                box-sizing: initial;
+                font-weight: bolder;
+                content: '';
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                line-height: 0;
+                border-radius: $border-radius-generic/2;
+                width: 20px;
+                height: 20px;
+    
+                border: 2px solid $blue-second;
+                transition: all 0.1s;
+                margin-right: 5px;
+    
+            }
+        }
+    
+        &:not(:checked) + label::before{
+    
+            color: $blue-second;
+            -webkit-transform: scale(1) rotate(0);
+            transform: scale(1) rotate(0);
+    
+        }
+    
+        &:checked + label::before{
+            content: '✕';
+            color: $blue-second;
+            -webkit-transform: scale(1) rotate(180deg);
+            transform: scale(1) rotate(180deg);
+    
+        }
+    
+    }
+
+
+}
+
+//////////// Scroll ///////////
+.c-scroll{
+
+    &::-webkit-scrollbar {
+        opacity: 0;
+        width: 8px;
+        height: 8px;
+    }
+
+    &:hover{
+        &::-webkit-scrollbar {
+            opacity: 1;
+        }
+        
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+            border-radius: 10px;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            background-color: $blue-second;
+            border-radius: 5px;
+        }
+
+    }
+
+}
+
+
+.c-modalInfo{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    .l-modalInfo__container{
+        @include flex-column;
+        border-radius: $border-radius-generic/2;
+        box-shadow: 0px 3px 5px rgba($color: $gray-second, $alpha: 0.4);
+        background: white;
+        width: 300px;
+        align-items: center;
+        overflow: hidden;
+
+
+        .l-modalInfo__header{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5% 5%;
+            color: white;
+
+            i{
+                font-size: 2rem;
+                cursor: pointer;
+            }
+        }
+
+        .l-modalInfo__content{
+            @include flex-column;
+            align-items: center;
+            padding: 10px 10px;
+            img{
+                width: 50px;
+                height: 50px;
+                background: blueviolet;
+            }
+
+            .c-modalInfo__title{
+                margin-top: 10px;
+
+            }
+
+            .c-modalInfo__message{
+                text-align: center;
+                margin: 15px 15px;
+            }
+
+        }
+
+
+        
+    }
+
+    &--warning{
+        .l-modalInfo__header{
+            background: #ff9f1c;
+        }
+
+        .c-modalInfo__buttonOk{
+
+            background: #ff9f1c;
+            color: white;
+            border: 2px solid #ff9f1c;
+    
+            &:hover{
+                background: white;
+                color: #ff9f1c;
+            }
+        
+            
+        }
+    }
+
+    &--good{
+        .l-modalInfo__header{
+            background: $green-main;
+        } 
+        .c-modalInfo__buttonOk{
+
+            background: $green-main;
+            color: white;
+            border: 2px solid $green-main;
+    
+            &:hover{
+                background: white;
+                color: $green-main;
+            }
+
+        }
+    }
+
+    &--error{
+        .l-modalInfo__header{
+            background: #e71d36;
+        }
+        .c-modalInfo__buttonOk{
+
+            background: #e71d36;
+            color: white;
+            border: 2px solid #e71d36;
+    
+            &:hover{
+                background: white;
+                color: #e71d36;
+            }
+
+        }
+    }
+
+
+}
+
+//////////// show-modal -> se aplica al body////////////
+.showing-modal{
+
+    overflow: hidden;
+    
+    &::before{
+        content: 'x';
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba($color: #000000, $alpha: 0.3);
+        z-index: 1;
+    }
+
+}
+
+
+
+
+////////////////////////////////////////////        BASICS              //////////////////////////////////////////// 
+
+
+//////////// separation line ///////////
+.c-separation-line{
+    margin: $margin-generic 0px;
+    width: 100%;
+    height: 1px;
+    background:$blue-second ;
+}
+
+//////////// circle - color ///////////
+.c-color{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: inline-block;
+
+
+    &--blue{
+        background-color: $blue-second;
+    }
+
+    &--gold{
+        background-color: goldenrod;
+    }
+
+    &--red{
+        background-color: palevioletred;
+    }
+
+    &--selected{
+        box-sizing: initial;
+        transform: scale(1.2);
+    }
+    
+    &:hover{
+        cursor: pointer;
+        box-sizing: initial;
+        transform: scale(1.2);
+    }
+
+}
+
+////////// display - flex ////////////
+.c-container{
+    display: flex;
+
+    .c-two-thirds{
+        width: 66.66666666%;
+    }
+
+    .c-one-third{
+        width: 33.33333333%;
+    }
+
+    .c-one-half{
+        width: 50%;
+    }
+
+    .c-one-half{
+        width: 50%;
+    }
+
+}
+
+.c-txt-right{
+    text-align: right;
+}
+
+.c-txt-left{
+    text-align: left;
+}
+
+// revisar no se si se esta utilizando  
+.c-icon{
+    cursor: pointer;
+    font-size: 1.6rem;
+    color: white;
+    
+    &--small{
+        font-size: 1.4rem;
+    }
+
+    &--big{
+        font-size: 2.5rem;
+    }
+
+}

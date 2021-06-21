@@ -1,0 +1,119 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 2;
+  background-color: #18122D;
+  padding: 2px 25px 2px 20px;
+  transition: all 0.5s;
+}
+.header__logo {
+  background: url("../assets/logo.png") center/cover no-repeat;
+  width: 120px;
+  height: 47px;
+}
+.header--shop .header__menu .menu-container > li {
+  display: inline-block;
+  padding: 2px 10px;
+}
+.header--shop .header__menu .menu-container > li > span {
+  display: none;
+}
+.header--home {
+  position: fixed;
+}
+.header--home .header__menu {
+  position: absolute;
+  top: 51px;
+  left: 0px;
+  padding: 0px 50px;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  background: #171731;
+  transition: all 0.4s;
+  z-index: 1;
+}
+.header--home .header__menu .menu-container {
+  margin-right: auto;
+  margin: 10px 0px;
+}
+.header--home .header__menu .menu-container li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding: 10px 0;
+  text-align: center;
+  text-shadow: 1px 1px 0.5px #424141;
+}
+.header--home .header__menu .menu-container li > a {
+  color: white;
+}
+.header--home .menu--visibility {
+  max-height: 250px;
+  transition: all 0.4s;
+}
+
+@media (min-width: 500px) {
+  .header--shop .header__menu .menu-container > li > span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    display: inline-block;
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    padding: 7px 25px 7px 20px;
+  }
+  .header--home {
+    background-color: transparent;
+    padding: 20px 40px 20px 50px;
+  }
+  .header--home .c-icon {
+    display: none;
+  }
+  .header--home .header__menu {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    position: static;
+    inset: auto auto auto auto;
+    padding: 0;
+    overflow: visible;
+    height: auto;
+    width: auto;
+  }
+  .header--home .header__menu .menu-container {
+    margin: 0;
+  }
+  .header--home .header__menu .menu-container > li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: inline-block;
+    padding: 2px 15px;
+  }
+  .header--home .header__menu .menu-container > li:last-child {
+    padding-right: 0px;
+  }
+  .header--draw {
+    background-color: #171731;
+    padding: 7px 25px 7px 20px;
+  }
+  .header__logo {
+    min-width: 160px;
+    height: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .header__logo {
+    min-width: 160px;
+  }
+  .header--home .header__menu .menu-container > li {
+    font-size: 2rem;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

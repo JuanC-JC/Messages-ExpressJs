@@ -1,0 +1,158 @@
+$font-montserrat:'Montserrat',sans-serif; 
+$font-open-sans: 'Open Sans', sans-serif;
+
+
+$tablet-width: 769px;
+$computer-width:1024px;
+
+
+$border-radius-generic:10px;
+$margin-generic:24px;
+
+
+//colores
+$blue-first: #18122D;
+$blue-second: #171731;
+$green-main: #25BF92;
+$gray-main: #C0C0C0;
+$gray-second:#D6D6D6;
+$gray-third: #F5F2F2;
+
+//box shadow
+$box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+
+
+//letras
+@mixin titles{
+    font-family: $font-montserrat;
+    font-weight:bold;
+}
+
+@mixin text{
+    font-family: $font-open-sans;
+}
+
+@mixin h1{
+    @include titles;
+    font-size: 4.5rem;
+    
+    @media(min-width: 768px){
+        font-size: 5.8rem;
+    }
+
+}
+
+@mixin h2 {
+    @include titles;
+    font-size: 2.8rem;    
+}
+
+@mixin h3{
+    @include titles;
+    font-size: 1.8rem;
+
+}
+
+@mixin h4 {
+    @include titles;
+    font-size: 1.6rem;
+}
+
+
+
+@mixin text-bold-16 {
+    @include text;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+@mixin text-semi-bold-16 {
+    @include text;
+    font-size: 1.6rem;
+    font-weight:600;
+    
+}
+
+
+
+///////////////////// TXT - REGULAR /////////////////////
+
+@mixin text-regular-28{
+    @include text;
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+
+@mixin text-regular-22 {
+    @include text;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+@mixin text-regular-20 {
+    @include text;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+
+@mixin text-regular-18 {
+    @include text;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+@mixin text-regular-16 {
+    @include text;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+@mixin text-regular-14 {
+    @include text;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+@mixin text-regular-12 {
+    @include text;
+    font-size: 1.2rem;
+    font-weight: 400;    
+}
+
+
+
+///////////////////// TXT - LIGHT /////////////////////
+@mixin text-light-16 {
+    @include text;
+    font-size: 1.6rem;
+    font-weight:300;
+    
+}
+
+@mixin text-light-14 {
+    @include text;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+@mixin text-light-12 {
+    @include text;
+    font-size: 1.2rem;
+    font-weight: 300;  
+}
+
+@mixin text-light-10{
+    @include text;
+    font-size: 1.0rem;
+    font-weight: 300;
+}
+
+
+
+///////////////////// LAYOUTS /////////////////////
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}
+

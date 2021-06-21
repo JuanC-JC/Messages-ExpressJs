@@ -1,0 +1,27 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  padding-top: 40px;
+  width: 90%;
+}
+.intro__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding-top: 50px;
+  width: 90%;
+}
+.intro__img {
+  margin: 62px 0 20px 0;
+  width: 206px;
+  height: 185px;
+  background: url("../assets/intro-img.png") center/cover no-repeat;
+}
+
+/*# sourceMappingURL=intro.css.map */

@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+{"version":3,"sourceRoot":"","sources":["../sass/home.scss","../sass/variables.scss"],"names":[],"mappings":"AAGA;EACI;EACA;EACA;EACA;EACA;EAGA;EACA;EACA;EACA;;AAEA;EACI;ECWJ,aA5Ba;EA6Bb;EASA;EDnBI;EACA;EACA;EACA;;AAGJ;EACI;ECOJ,aAhCa;EAwEb;EACA;ED9CI;EACA;;;AAQR;EACI;IACI;IACA;;EACA;IACI;IACA;;EAGJ;IACI;IACA","file":"home.css"}
+=======
+{"version":3,"sourceRoot":"","sources":["../sass/home.scss","../sass/variables.scss"],"names":[],"mappings":"AAGA;EACI;EACA;EACA;EACA;EACA;EAGA;EACA;EACA;EACA;;AAEA;EACI;ECMJ,aAvBa;EAwBb;EASA;EDdI;;AAGJ;EACI;ECKJ,aA3Ba;EA8Eb;EACA;EDvDI","file":"home.css"}
+>>>>>>> responsive

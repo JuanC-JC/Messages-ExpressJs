@@ -1,0 +1,44 @@
+@import './variables.scss';
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    position: relative;
+}
+
+ul{
+    list-style: none;
+}
+
+//////////////////////////////////////////// TEXTOS ///////////////////////////////
+h1{
+    @include h1;
+}
+
+h2{
+    @include h2;
+}
+
+h3{
+    @include h3;
+}
+
+h4{
+    @include h4;
+}
+
+p{
+    @include text-regular-16;
+}

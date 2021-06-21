@@ -1,0 +1,39 @@
+.photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.photos__hashtag {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: white;
+  padding: 14px 0;
+  background: #171731;
+  margin-bottom: 40px;
+}
+.photos__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  width: 90%;
+}
+.photos__container .container-img {
+  width: 100%;
+  justify-self: center;
+  width: 132px;
+  height: 132px;
+  background-color: yellow;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.photos__container .container-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/*# sourceMappingURL=photos.css.map */

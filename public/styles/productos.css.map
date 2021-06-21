@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+{"version":3,"sourceRoot":"","sources":["../sass/productos.scss","../sass/variables.scss"],"names":[],"mappings":"AAGA;EACI;EACA;EACA;;AAGA;ECmBA,aA5Ba;EA6Bb;EAaA;;AD7BA;EACI;;AAEA;EACI;EACA;EACA;EACA;;AAGA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;;AAEA;EACG;EACA;;AAIP;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EC9BpB,aA5Ba;EA6Bb;EAiBA;EDcoB;EACA;EACA;;AAEA;EACI;;AAGJ;EACI;;AAMZ;EACI;;AAGJ;EACI;;AAML;EACI;;AAEJ;EACI;EACA;EACA;;AAQf;ECnEA,aAhCa;EAwEb;EACA;ED4BI;EACA;EACA","file":"productos.css"}
+=======
+{"version":3,"sourceRoot":"","sources":["../sass/productos.scss","../sass/variables.scss"],"names":[],"mappings":"AAEA;EACI;EACA;EACA;EACA;;AAII;EACI;;AAGA;EACI;EACA;EACA;EACA;EACA;;AAKZ;ECIA,aA3Ba;EA8Eb;EACA;EDtDI;EACA","file":"productos.css"}
+>>>>>>> responsive

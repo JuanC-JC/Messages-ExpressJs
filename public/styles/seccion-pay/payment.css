@@ -1,0 +1,124 @@
+.l-payment {
+  width: 90%;
+  margin: 0 auto;
+  min-width: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.l-payment .l-payment__accept {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.l-payment .l-payment__accept .c-button {
+  margin: 24px 0px;
+}
+.l-payment .c-payment__get-back {
+  margin-bottom: 24px;
+}
+
+.c-form {
+  width: 100%;
+}
+.c-form .l-form-section {
+  width: 100%;
+  border: none;
+  margin-bottom: 24px;
+}
+.c-form .l-form-section .c-form-section__title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 13px;
+}
+.c-form .l-form-section .l-form-section__inputs {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.c-form .l-form-section .l-form-section__inputs--options {
+  padding: 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  background: #D6D6D6;
+  justify-content: center;
+  border-radius: 10px;
+}
+.c-form .l-form-section .l-form-section__inputs--options .c-form-option {
+  margin: 5px 10px;
+}
+.c-form .l-form-section .l-form-section__inputs--inline {
+  display: flex;
+  align-items: flex-end;
+}
+.c-form .l-form-section .l-form-section__inputs--inline input[type=text] {
+  text-align: center;
+}
+.c-form .l-form-section .l-form-section__inputs--inline > label:last-child {
+  width: 40%;
+}
+.c-form .l-form-section .l-form-section__inputs--inline > label:first-child {
+  margin-right: 10%;
+}
+.c-form .l-form-section .c-form-input {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 7px;
+  width: 100%;
+}
+.c-form .l-form-section .c-form-input__title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.c-form .l-form-section .c-form-input input[type=text], .c-form .l-form-section .c-form-input input[type=email] {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  width: 100%;
+  border-top-left-radius: 2.5px;
+  border-top-right-radius: 2.5px;
+  padding: 7px 0px 0px 0px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #171731;
+  padding-bottom: 2px;
+  padding-left: 2px;
+}
+.c-form .l-form-section .c-form-input input[type=text]:active, .c-form .l-form-section .c-form-input input[type=text]:focus, .c-form .l-form-section .c-form-input input[type=email]:active, .c-form .l-form-section .c-form-input input[type=email]:focus {
+  background-color: #D6D6D6;
+}
+.c-form .l-form-section .c-form-input--icon {
+  position: relative;
+}
+.c-form .l-form-section .c-form-input--icon input[type=text] {
+  padding-left: 30px;
+}
+.c-form .l-form-section .c-form-input--icon i {
+  position: absolute;
+  bottom: 0;
+  padding: 5px;
+}
+.c-form .l-form-section .l-form-input__items {
+  display: flex;
+}
+.c-form .l-form-section .l-form-input__items input[type=text] {
+  margin-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .l-payment {
+    max-width: 532px;
+  }
+}
+@media (min-width: 1024px) {
+  .l-payment {
+    max-width: 490px;
+  }
+}
+
+/*# sourceMappingURL=payment.css.map */

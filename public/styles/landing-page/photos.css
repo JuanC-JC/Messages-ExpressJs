@@ -1,0 +1,71 @@
+.photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.photos__hashtag {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: center;
+  color: white;
+  padding: 14px 0;
+  background: #18122D;
+  margin-bottom: 40px;
+}
+.photos__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  width: 90%;
+}
+.photos__container .container-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.photos__container .container-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.photos__container .img-left {
+  justify-self: end;
+}
+
+@media (min-width: 425px) {
+  .photos__container {
+    gap: 20px;
+  }
+  .photos__container .container-img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+@media (min-width: 768px) {
+  .photos__container {
+    width: 90%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .photos__container .container-img {
+    height: 165px;
+  }
+}
+@media (min-width: 1024px) {
+  .photos__container {
+    width: 70%;
+  }
+  .photos__container .container-img {
+    height: 180px;
+    justify-self: center;
+    max-width: 200px;
+    max-height: 180px;
+  }
+}
+
+/*# sourceMappingURL=photos.css.map */

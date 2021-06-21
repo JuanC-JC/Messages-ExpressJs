@@ -1,0 +1,105 @@
+.productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+.productos__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2.8rem;
+}
+.productos__contenedor {
+  width: 90%;
+  padding: 25Px 0px 25px 0;
+  overflow-x: scroll;
+}
+.productos__contenedor .productos-carrusel {
+  display: flex;
+  cursor: pointer;
+  scroll-behavior: smooth;
+}
+.productos__contenedor .productos-carrusel .producto {
+  position: relative;
+  min-width: 200px;
+  max-width: 200px;
+  height: 260px;
+  margin: 0 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transform-origin: center center;
+  transition: transform 0.5s;
+}
+.productos__contenedor .productos-carrusel .producto__img {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.productos__contenedor .productos-carrusel .producto__img img {
+  height: 100%;
+}
+.productos__contenedor .productos-carrusel .producto__details {
+  position: absolute;
+  inset: 0px 0px 0px 0px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: start;
+}
+.productos__contenedor .productos-carrusel .producto__details .cont-details {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding: 4px;
+  border-radius: 0 4px 4px 0;
+  margin-bottom: 3px;
+}
+.productos__contenedor .productos-carrusel .producto__details .cont-details--precio {
+  background: #F5AF2E;
+}
+.productos__contenedor .productos-carrusel .producto__details .cont-details--name {
+  background: #1F1F2F;
+}
+.productos__contenedor .productos-carrusel .producto:first-child {
+  transform-origin: center left;
+}
+.productos__contenedor .productos-carrusel .producto:last-child {
+  transform-origin: center right;
+}
+.productos__contenedor .productos-carrusel:hover .producto {
+  transition: transform 0.5s;
+  opacity: 0.7;
+}
+.productos__contenedor .productos-carrusel:hover .producto:hover {
+  transition: transform 0.5s;
+  transform: scale(1.1);
+  opacity: 1;
+  z-index: 1;
+}
+.productos__descripcion {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 50px;
+  width: 70%;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .productos__title {
+    font-size: 3.5rem;
+  }
+  .productos__contenedor .productos-carrusel .producto {
+    min-width: 250px;
+    height: 325px;
+  }
+  .productos__descripcion {
+    margin-top: 20px;
+    font-size: 1.8rem;
+  }
+}
+
+/*# sourceMappingURL=productos.css.map */

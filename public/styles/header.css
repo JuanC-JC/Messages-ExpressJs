@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 54px;
+  background-color: #18122D;
+  padding: 0px 25px 0 20px;
+}
+.header__logo {
+  background: url("../assets/logo.png") center/cover no-repeat;
+  width: 120px;
+  height: 47px;
+}
+.header__menu {
+  position: absolute;
+  top: 54px;
+  left: 0px;
+  padding: 0px 50px;
+  width: 100%;
+  height: 0;
+  background: #171731;
+  transition: all 0.4s;
+  overflow: hidden;
+  z-index: 1;
+}
+.header__menu .menu-container {
+  margin: 20px 0px;
+}
+
+.visibility {
+  height: 208px;
+  transition: all 0.4s;
+}
+
+.menu-container li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  padding: 10px 0;
+}
+.menu-container li > a {
+  color: white;
+}
+
+/*# sourceMappingURL=header.css.map */

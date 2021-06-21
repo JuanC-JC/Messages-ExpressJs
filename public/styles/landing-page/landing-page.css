@@ -1,0 +1,396 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 450px;
+  padding: 76px 0 70px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url("../assets/home-img.jpg") center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.home__title {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 4.5rem;
+  width: 90%;
+  text-align: center;
+  text-shadow: black 1px 1px 10px;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .home__title {
+    font-size: 5.8rem;
+  }
+}
+.home__text {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+  width: 90%;
+}
+
+@media (min-width: 768px) {
+  .home {
+    height: 600px;
+    justify-content: center;
+  }
+  .home__title {
+    margin-bottom: 20px;
+  }
+  .home__text {
+    width: 700px;
+    font-size: 2.2rem;
+  }
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro__text {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro__text .text__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2.8rem;
+  padding-top: 40px;
+  text-align: center;
+}
+.intro__text .text__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding-top: 40px;
+  text-align: center;
+}
+.intro__img {
+  margin: 40px 0 30px 0;
+  width: 80%;
+  height: 260px;
+  background: url("../assets/intro-img.png") center/cover no-repeat;
+}
+
+@media (min-width: 425px) {
+  .intro__img {
+    width: 340px;
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .intro__text .text__title {
+    font-size: 3.5rem;
+  }
+  .intro__text .text__text {
+    font-size: 1.8rem;
+  }
+  .intro__img {
+    width: 380px;
+    height: 350px;
+  }
+}
+@media (min-width: 1024px) {
+  .intro {
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .intro__text {
+    width: 350px;
+    margin-right: 40px;
+  }
+  .intro__img {
+    min-width: 440px;
+    height: 413px;
+  }
+}
+.photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.photos__hashtag {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: center;
+  color: white;
+  padding: 14px 0;
+  background: #18122D;
+  margin-bottom: 40px;
+}
+.photos__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  width: 90%;
+}
+.photos__container .container-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.photos__container .container-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.photos__container .img-left {
+  justify-self: end;
+}
+
+@media (min-width: 425px) {
+  .photos__container {
+    gap: 20px;
+  }
+  .photos__container .container-img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+@media (min-width: 768px) {
+  .photos__container {
+    width: 90%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .photos__container .container-img {
+    height: 165px;
+  }
+}
+@media (min-width: 1024px) {
+  .photos__container {
+    width: 70%;
+  }
+  .photos__container .container-img {
+    height: 180px;
+    justify-self: center;
+    max-width: 200px;
+    max-height: 180px;
+  }
+}
+.proceso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.proceso__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2.8rem;
+  text-align: center;
+  padding: 20px 0px 22px 0;
+  width: 90%;
+}
+.proceso__items {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: center;
+}
+.proceso__items .items-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.proceso__items .items-left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.proceso__container {
+  display: flex;
+  padding: 18px 0;
+  width: 100%;
+  max-width: 410px;
+}
+.proceso__container .proceso-img {
+  background: url(../assets/proceso-img.png) center/cover no-repeat;
+  min-width: 60px;
+  height: 60px;
+  margin: 25px 10px;
+}
+.proceso__container .proceso-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 10px;
+}
+.proceso__container .proceso-text .text-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: start;
+  letter-spacing: -0.01em;
+}
+.proceso__container .proceso-text .text-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-align: start;
+  letter-spacing: -0.01em;
+}
+.proceso__container--reverse {
+  flex-direction: row-reverse;
+}
+.proceso__container--reverse .proceso-text {
+  padding: 0 10px 0 0;
+}
+.proceso__container--reverse .proceso-text .text-title {
+  text-align: end;
+}
+.proceso__container--reverse .proceso-text .text-text {
+  text-align: end;
+}
+
+@media (min-width: 768px) {
+  .proceso__title {
+    font-size: 3.5rem;
+  }
+  .proceso__items {
+    width: 90%;
+  }
+  .proceso__items .items-right {
+    width: 50%;
+    align-items: flex-end;
+  }
+  .proceso__items .items-left {
+    width: 50%;
+    align-items: flex-start;
+  }
+
+  .proceso__container .proceso-text .text-title {
+    font-size: 2rem;
+  }
+  .proceso__container .proceso-text .text-text {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 1024px) {
+  .proceso__title {
+    width: 80%;
+  }
+  .proceso__items {
+    width: 80%;
+  }
+}
+.productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+.productos__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2.8rem;
+}
+.productos__contenedor {
+  width: 90%;
+  padding: 25Px 0px 25px 0;
+  overflow-x: scroll;
+}
+.productos__contenedor .productos-carrusel {
+  display: flex;
+  cursor: pointer;
+  scroll-behavior: smooth;
+}
+.productos__contenedor .productos-carrusel .producto {
+  position: relative;
+  min-width: 200px;
+  max-width: 200px;
+  height: 260px;
+  margin: 0 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transform-origin: center center;
+  transition: transform 0.5s;
+}
+.productos__contenedor .productos-carrusel .producto__img {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.productos__contenedor .productos-carrusel .producto__img img {
+  height: 100%;
+}
+.productos__contenedor .productos-carrusel .producto__details {
+  position: absolute;
+  inset: 0px 0px 0px 0px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: start;
+}
+.productos__contenedor .productos-carrusel .producto__details .cont-details {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding: 4px;
+  border-radius: 0 4px 4px 0;
+  margin-bottom: 3px;
+}
+.productos__contenedor .productos-carrusel .producto__details .cont-details--precio {
+  background: #F5AF2E;
+}
+.productos__contenedor .productos-carrusel .producto__details .cont-details--name {
+  background: #1F1F2F;
+}
+.productos__contenedor .productos-carrusel .producto:first-child {
+  transform-origin: center left;
+}
+.productos__contenedor .productos-carrusel .producto:last-child {
+  transform-origin: center right;
+}
+.productos__contenedor .productos-carrusel:hover .producto {
+  transition: transform 0.5s;
+  opacity: 0.7;
+}
+.productos__contenedor .productos-carrusel:hover .producto:hover {
+  transition: transform 0.5s;
+  transform: scale(1.1);
+  opacity: 1;
+  z-index: 1;
+}
+.productos__descripcion {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 50px;
+  width: 70%;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .productos__title {
+    font-size: 3.5rem;
+  }
+  .productos__contenedor .productos-carrusel .producto {
+    min-width: 250px;
+    height: 325px;
+  }
+  .productos__descripcion {
+    margin-top: 20px;
+    font-size: 1.8rem;
+  }
+}
+
+/*# sourceMappingURL=landing-page.css.map */

@@ -1,0 +1,382 @@
+@charset "UTF-8";
+.c-txt-16 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.c-txt-14 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.c-txt-12 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.c-txt-l-16 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.c-txt-l-14 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.c-txt-l-12 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.c-txt-l-10 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.c-button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  display: inline-block;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px 24px;
+  cursor: pointer;
+  box-shadow: 0px 3px 5px rgba(214, 214, 214, 0.4);
+}
+.c-button--small {
+  padding: 5px 10px;
+}
+.c-button--green {
+  background: #25BF92;
+  color: white;
+  border: 2px solid #25BF92;
+}
+.c-button--green:hover {
+  background: white;
+  color: #25BF92;
+}
+.c-button--flat {
+  background: white;
+  border: 1px solid #C0C0C0;
+}
+.c-button--flat:hover {
+  border: 1px solid #171731;
+}
+.c-button--selected {
+  background: #171731;
+  color: white;
+}
+.c-button--selected i {
+  color: white;
+}
+
+.c-description-item {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+  width: 30%;
+}
+.c-description-item--right {
+  border-right: 1px solid #C0C0C0;
+}
+
+.c-increment {
+  display: flex;
+  align-items: center;
+}
+.c-increment__button {
+  padding: 5px 4px;
+}
+.c-increment__button i {
+  font-size: 14px;
+  color: #171731;
+}
+.c-increment__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin: 0px 10px;
+}
+
+.c-checkbox-option {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.c-checkbox-option input[type=checkbox] {
+  display: none;
+}
+.c-checkbox-option input[type=checkbox] + label {
+  display: flex;
+  align-items: center;
+}
+.c-checkbox-option input[type=checkbox] + label:hover {
+  cursor: pointer;
+}
+.c-checkbox-option input[type=checkbox] + label::before {
+  font-weight: bolder;
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #171731;
+  transition: all 0.1s;
+  margin-right: 5px;
+}
+.c-checkbox-option input[type=checkbox]:not(:checked) + label::before {
+  color: #171731;
+  -webkit-transform: scale(1) rotate(0);
+  transform: scale(1) rotate(0);
+}
+.c-checkbox-option input[type=checkbox]:checked + label::before {
+  content: "✕";
+  color: #171731;
+  -webkit-transform: scale(1) rotate(180deg);
+  transform: scale(1) rotate(180deg);
+}
+
+.c-radio-option {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.c-radio-option input[type=radio] {
+  display: none;
+}
+.c-radio-option input[type=radio] + label {
+  display: flex;
+  align-items: center;
+}
+.c-radio-option input[type=radio] + label:hover {
+  cursor: pointer;
+}
+.c-radio-option input[type=radio] + label::before {
+  box-sizing: initial;
+  font-weight: bolder;
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #171731;
+  transition: all 0.1s;
+  margin-right: 5px;
+}
+.c-radio-option input[type=radio]:not(:checked) + label::before {
+  color: #171731;
+  -webkit-transform: scale(1) rotate(0);
+  transform: scale(1) rotate(0);
+}
+.c-radio-option input[type=radio]:checked + label::before {
+  content: "✕";
+  color: #171731;
+  -webkit-transform: scale(1) rotate(180deg);
+  transform: scale(1) rotate(180deg);
+}
+
+.c-scroll::-webkit-scrollbar {
+  opacity: 0;
+  width: 8px;
+  height: 8px;
+}
+.c-scroll:hover::-webkit-scrollbar {
+  opacity: 1;
+}
+.c-scroll:hover::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 10px;
+}
+.c-scroll:hover::-webkit-scrollbar-thumb {
+  background-color: #171731;
+  border-radius: 5px;
+}
+
+.c-modalInfo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c-modalInfo .l-modalInfo__container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0px 3px 5px rgba(214, 214, 214, 0.4);
+  background: white;
+  width: 300px;
+  align-items: center;
+  overflow: hidden;
+}
+.c-modalInfo .l-modalInfo__container .l-modalInfo__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 5%;
+  color: white;
+}
+.c-modalInfo .l-modalInfo__container .l-modalInfo__header i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.c-modalInfo .l-modalInfo__container .l-modalInfo__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 10px;
+}
+.c-modalInfo .l-modalInfo__container .l-modalInfo__content img {
+  width: 50px;
+  height: 50px;
+  background: blueviolet;
+}
+.c-modalInfo .l-modalInfo__container .l-modalInfo__content .c-modalInfo__title {
+  margin-top: 10px;
+}
+.c-modalInfo .l-modalInfo__container .l-modalInfo__content .c-modalInfo__message {
+  text-align: center;
+  margin: 15px 15px;
+}
+.c-modalInfo--warning .l-modalInfo__header {
+  background: #ff9f1c;
+}
+.c-modalInfo--warning .c-modalInfo__buttonOk {
+  background: #ff9f1c;
+  color: white;
+  border: 2px solid #ff9f1c;
+}
+.c-modalInfo--warning .c-modalInfo__buttonOk:hover {
+  background: white;
+  color: #ff9f1c;
+}
+.c-modalInfo--good .l-modalInfo__header {
+  background: #25BF92;
+}
+.c-modalInfo--good .c-modalInfo__buttonOk {
+  background: #25BF92;
+  color: white;
+  border: 2px solid #25BF92;
+}
+.c-modalInfo--good .c-modalInfo__buttonOk:hover {
+  background: white;
+  color: #25BF92;
+}
+.c-modalInfo--error .l-modalInfo__header {
+  background: #e71d36;
+}
+.c-modalInfo--error .c-modalInfo__buttonOk {
+  background: #e71d36;
+  color: white;
+  border: 2px solid #e71d36;
+}
+.c-modalInfo--error .c-modalInfo__buttonOk:hover {
+  background: white;
+  color: #e71d36;
+}
+
+.showing-modal {
+  overflow: hidden;
+}
+.showing-modal::before {
+  content: "x";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.c-separation-line {
+  margin: 24px 0px;
+  width: 100%;
+  height: 1px;
+  background: #171731;
+}
+
+.c-color {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.c-color--blue {
+  background-color: #171731;
+}
+.c-color--gold {
+  background-color: goldenrod;
+}
+.c-color--red {
+  background-color: palevioletred;
+}
+.c-color--selected {
+  box-sizing: initial;
+  transform: scale(1.2);
+}
+.c-color:hover {
+  cursor: pointer;
+  box-sizing: initial;
+  transform: scale(1.2);
+}
+
+.c-container {
+  display: flex;
+}
+.c-container .c-two-thirds {
+  width: 66.66666666%;
+}
+.c-container .c-one-third {
+  width: 33.33333333%;
+}
+.c-container .c-one-half {
+  width: 50%;
+}
+.c-container .c-one-half {
+  width: 50%;
+}
+
+.c-txt-right {
+  text-align: right;
+}
+
+.c-txt-left {
+  text-align: left;
+}
+
+.c-icon {
+  cursor: pointer;
+  font-size: 1.6rem;
+  color: white;
+}
+.c-icon--small {
+  font-size: 1.4rem;
+}
+.c-icon--big {
+  font-size: 2.5rem;
+}
+
+/*# sourceMappingURL=components.css.map */

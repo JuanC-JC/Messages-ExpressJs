@@ -1,0 +1,65 @@
+.proceso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.proceso__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  padding: 20px 0px 40px 0;
+  width: 90%;
+}
+.proceso__items {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-content: center;
+}
+
+.proceso__container {
+  display: flex;
+  padding: 18px 0;
+  max-width: 380px;
+}
+.proceso__container .proceso-img {
+  min-width: 60px;
+  height: 60px;
+  margin: 25px 10px;
+  background: black;
+}
+.proceso__container .proceso-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 10px;
+}
+.proceso__container .proceso-text .text-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: start;
+  letter-spacing: -0.01em;
+}
+.proceso__container .proceso-text .text-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-align: start;
+  letter-spacing: -0.01em;
+}
+.proceso__container--reverse {
+  flex-direction: row-reverse;
+}
+.proceso__container--reverse .proceso-text {
+  padding: 0 10px 0 0;
+}
+.proceso__container--reverse .proceso-text .text-title {
+  text-align: end;
+}
+.proceso__container--reverse .proceso-text .text-text {
+  text-align: end;
+}
+
+/*# sourceMappingURL=proceso.css.map */
